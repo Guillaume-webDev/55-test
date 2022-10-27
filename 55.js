@@ -14,6 +14,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       return;
     }
     if (item.isIntersecting === true) {
+ // it will log the name and the price in the console 
       console.log(`Name:${name.innerText}, Price:${price.innerText}`);
  // once we have displayed the info about that product, stop tracking it
       observer.unobserve(item.target);
