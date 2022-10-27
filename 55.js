@@ -3,7 +3,7 @@ const items = [...document.querySelectorAll(".l-productgrid__item")];
 
 
 // handle elements intersecting with the viewport, i.e. being displayed
-// this is called by the intersecton observer when a product comes on screen
+// this is called by the observer when a product comes on screen
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((item) => {
     let name = item.target.querySelector(".c-product__name");
