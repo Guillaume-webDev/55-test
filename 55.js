@@ -1,4 +1,4 @@
-// spread operator to get everything inside of the productgrid
+// spread operator to have infos inside of an array
 const items = [...document.querySelectorAll(".l-productgrid__item")];
 
 
