@@ -6,6 +6,7 @@ const items = [...document.querySelectorAll(".l-productgrid__item")];
 // this is called by the observer when a product comes on screen
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((item) => {
+// the querySelector will get the name and the price of the products
     let name = item.target.querySelector(".c-product__name");
     let price = item.target.querySelector(".c-price__value--current");
 // the first time we observe the element, it might still be off-screen.
